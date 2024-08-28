@@ -1,3 +1,0 @@
-nome = "Kaio"
-
-print(nome)
