@@ -1,8 +1,8 @@
-merchandise_value = int(input("Enter the Merchandise value: "))
-discount_percentage = int(input("Enter the Discount Percentage: "))
+merchandiseValue = int(input("Enter the Merchandise value: "))
+discountPercentage = int(input("Enter the Discount Percentage: "))
 
-discount_value = merchandise_value * discount_percentage / 100
-total_discounted_value = merchandise_value - discount_value
+discountValue = merchandiseValue * discountPercentage / 100
+totalDiscountedValue = merchandiseValue - discountValue
 
-print(f"Discount Value: {discount_value}")
-print(f"Total Discounted Value: ${total_discounted_value:1.2f}")
+print(f"Discount Value: {discountValue}")
+print(f"Total Discounted Value: ${totalDiscountedValue:1.2f}")

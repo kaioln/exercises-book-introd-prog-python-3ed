@@ -4,12 +4,12 @@ hours = int(input("Enter the hours: "))
 minutes = int(input("Enter the minutes: "))
 seconds = int(input("Enter the seconds: "))
 
-days_seconds = days * 86400
-hours_seconds = hours * 3600
-minutes_seconds = minutes * 60
-total_seconds = seconds + days_seconds + hours_seconds + minutes_seconds
+daysSeconds = days * 86400
+hoursSeconds = hours * 3600
+minutesSeconds = minutes * 60
+totalSeconds = seconds + days_Seconds + hoursSeconds + minutesSeconds
 
-print(total_seconds)
+print(totalSeconds)
 # ------------------------------------------------
 
 # days = int(input("Enter the days: "))
@@ -19,5 +19,5 @@ print(total_seconds)
 # print(seconds)
 
 # days = int(input("Enter the days: "))
-# total_seconds = (days * 24 ) * 3600
-# print(total_seconds)
+# totalSeconds = (days * 24 ) * 3600
+# print(totalSeconds)
