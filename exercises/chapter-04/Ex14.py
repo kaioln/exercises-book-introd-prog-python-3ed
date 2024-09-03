@@ -17,8 +17,3 @@ elif installationType == "I" and kwhQuantity > 1000:
 elif installationType == "R" and kwhQuantity <= 5000:
     price = 0.55
     print(f"The price of kWh is: ${price:3.2f}")
-elif installationType == "R" and kwhQuantity > 5000:
-    price = 0.60
-    print(f"The price of kWh is: ${price:3.2f}")
-else:
-    print(f"Error! Enter the correct value. R, C or I.")
