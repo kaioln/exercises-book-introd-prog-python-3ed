@@ -2,13 +2,12 @@ initialDeposit = int(input("Enter the initial deposit amount: "))
 interestRate = int(input("Enter the savings interest rate: "))
 monthlyDeposited = int(input("Enter the monthly deposit amount: "))
 
-x = 1
-value = 0
+month = 1
+value = initialDeposit  
 
-while x <= 24:
-    capitalIncrease = initialDeposit * (1 + (interestRate / 100)) ** x
-    if monthlyDeposited != 0:
-        capitalIncrease = capitalIncrease + (capitalIncrease + interestRate) + monthlyDeposited
-    print(f"At the end of the {x}º, the rate value will be equal ${capitalIncrease:.2f}")
-    x += 1
-print(f"{capitalIncrease:6.2f}")
+while month <= 24:
+    value = value * (1 + interestRate / 100 / 12) + monthlyDeposited
+    print(f"At the end of month {month}, the rate value will be: ${value:.2f}")
+    month += 1  
+
+print(f"Total value after 24 months: ${value:.2f}")
